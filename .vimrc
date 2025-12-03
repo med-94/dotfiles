@@ -22,5 +22,8 @@ set noshiftround
 " Status bar
 set laststatus=2
 
+" Treat .tofu files as Terraform
+au BufNewFile,BufRead *.tofu set filetype=terraform
+
 " vim-terraform
 let g:terraform_fmt_on_save=1
